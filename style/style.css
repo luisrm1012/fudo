@@ -1,0 +1,244 @@
+/*
+    #A8A8A8 GRIS
+    #BDA173 MARRON CREMA
+    #A69076 MARRON CLARO
+    #59402A MARRON
+    #261B14 MARRON OSCURO
+*/
+
+/* FONTS */
+
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Rowdies', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Rowdies:wght@300;400;700&display=swap');
+
+/*
+    **************
+    *   INDEX    *
+    ***************
+
+    1. Header
+    2. Container 1
+    3.
+*/
+
+* {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rowdies', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    /*************
+    *  1. HEADER  *
+    **************/
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #261B14;
+    height: 75px;
+    z-index: 1;
+}
+
+.header-container-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header-items a {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: border 0.2s linear;
+}
+
+.header-items .active {
+    border-bottom:  5px solid white;
+}
+
+.header-items a:hover {
+    border-bottom:  5px solid white;
+}
+
+    /******************
+    *  2. Container1  *
+    ******************/
+
+.container1{
+    position: relative;
+    background-color: #A69076;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-p1 {
+    font-size: 20rem;
+}
+
+.title-p2 {
+    font-size: 20rem;
+    margin-bottom: 150px;
+}
+
+.title-p1,.title-p2 {
+    color: #261B14;
+    width: fit-content;
+    animation: myAnimation 10s infinite ease-in;
+}
+
+@keyframes myAnimation {
+
+    0% {
+        opacity: 0;
+        font-family: 'Rowdies', cursive;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+    /* 0% {} */
+    
+}
+
+.container1-title{
+    font-size: 5rem;
+    position: absolute;
+    width: fit-content;
+    left: 450px;
+    top: 250px;
+}
+
+.container1-text-container {
+    position: absolute;
+    width: 500px;
+    left: 350px;
+    top: 350px;
+}
+
+.container1-text {
+    font-size: 3rem;
+}
+
+.container1-img {
+    float: left;
+    position: absolute;
+    left: 1100px;
+    top: 200px;
+    width: 500px;
+    height: 500px;
+}
+
+    /******************
+    *  3. Container2  *
+    ******************/
+
+.container2{
+    position: relative;
+    background-color: #BDA173;
+    width: 100%;
+    height: 900px;
+    scroll-behavior: smooth;
+}
+
+.container2-title{
+    font-size: 7rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+}
+
+.container2-text-container {
+    position: absolute;
+    width: 500px;
+    left: 60%;
+    top: 200px;
+    text-align: center;
+}
+
+.container2-text {
+    font-size: 3rem;
+}
+
+.container2-img {
+    float: left;
+    position: absolute;
+    left: 18%;
+    top: 250px;
+    width: 500px;
+    height: 500px;
+}
+
+    /******************
+    *    4. Footer    *
+    ******************/
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+
+.footer-container li {
+    color: white;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.footer-container h1 {
+    color: white;
+    font-weight: 200;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 200px;
+}
+
+.footer-container i {
+    font-size: 3rem;
+    color: white;
+    margin: 5px 0;
+}
+
+.footer-social-media-container {
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
