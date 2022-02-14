@@ -6,7 +6,9 @@
     #261B14 MARRON OSCURO
 */
 
+
 /* FONTS */
+
 
 /*
 font-family: 'Acme', sans-serif;
@@ -39,7 +41,8 @@ html {
     scroll-behavior: smooth;
 }
 
-    /*************
+
+/*************
     *  1. HEADER  *
     **************/
 
@@ -59,7 +62,6 @@ html {
     list-style: none;
     display: flex;
     flex-direction: row;
-    
 }
 
 .header-items a {
@@ -71,18 +73,19 @@ html {
 }
 
 .header-items .active {
-    border-bottom:  5px solid white;
+    border-bottom: 5px solid white;
 }
 
 .header-items a:hover {
-    border-bottom:  5px solid white;
+    border-bottom: 5px solid white;
 }
 
-    /******************
+
+/******************
     *  2. Container1  *
     ******************/
 
-.container1{
+.container1 {
     position: relative;
     background-color: #A69076;
     width: 100%;
@@ -102,36 +105,31 @@ html {
     margin-bottom: 150px;
 }
 
-.title-p1,.title-p2 {
+.title-p1,
+.title-p2 {
     color: #261B14;
     width: fit-content;
     animation: myAnimation 10s infinite ease-in;
 }
 
 @keyframes myAnimation {
-
     0% {
         opacity: 0;
         font-family: 'Rowdies', cursive;
     }
-
     20% {
         opacity: 1;
     }
-
     80% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
-
     /* 0% {} */
-    
 }
 
-.container1-title{
+.container1-title {
     font-size: 5rem;
     position: absolute;
     width: fit-content;
@@ -159,11 +157,12 @@ html {
     height: 500px;
 }
 
-    /******************
+
+/******************
     *  3. Container2  *
     ******************/
 
-.container2{
+.container2 {
     position: relative;
     background-color: #BDA173;
     width: 100%;
@@ -171,7 +170,8 @@ html {
     scroll-behavior: smooth;
 }
 
-.container2-title{
+.container2-title {
+    color: #59402A;
     font-size: 7rem;
     position: absolute;
     left: 50%;
@@ -180,6 +180,7 @@ html {
 }
 
 .container2-text-container {
+    color: #59402A;
     position: absolute;
     width: 500px;
     left: 60%;
@@ -200,28 +201,28 @@ html {
     height: 500px;
 }
 
-    /******************
+
+/******************
     *    4. Footer    *
     ******************/
 
 .footer {
-    background-color: black;
+    background-color: #59402A;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-
 }
 
 .footer-container li {
-    color: white;
+    color: #A69076;
     font-weight: 200;
     font-size: 2rem;
 }
 
 .footer-container h1 {
-    color: white;
+    color: #A69076;
     font-weight: 200;
     font-size: 5rem;
     text-align: center;
@@ -230,7 +231,7 @@ html {
 
 .footer-container i {
     font-size: 3rem;
-    color: white;
+    color: #A69076;
     margin: 5px 0;
 }
 
